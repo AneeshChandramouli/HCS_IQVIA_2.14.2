@@ -115,7 +115,7 @@ RUN;
 %macro csv_export (DATA);
 
 proc export data=&DATA. dbms=CSV
-outfile= %TSLIT (C:\Users\panyue\Box\1 Healing Communities\DATA_NYS\PAN\2.14.2 IQVIA\HCS deliveries\&DATA..CSV)
+outfile= %TSLIT (C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\PAN\2.14.2 IQVIA\HCS deliveries\&DATA..CSV)
 replace;
 run;
 
@@ -129,7 +129,7 @@ run;
 %macro csv_export (DATA);
 
 proc export data=&DATA. dbms=CSV
-outfile= %TSLIT (C:\Users\panyue\Box\1 Healing Communities\DATA_NYS\PAN\2.14.2 IQVIA\Export\&DATA..CSV)
+outfile= %TSLIT (C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\PAN\2.14.2 IQVIA\Export\&DATA..CSV)
 replace;
 run;
 

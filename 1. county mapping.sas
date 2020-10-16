@@ -1,17 +1,17 @@
 
-LIBNAME MAP 'C:\Users\panyue\Box\Yue Pan from old laptop 2015\DR FEASTER\Healing Communities\2.14.2 IQVIA';
+LIBNAME MAP 'C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\PAN\2.14.2 IQVIA';
 
 LIBNAME POP 'C:\Users\panyue\Box\Yue Pan from old laptop 2015\DR FEASTER\Healing Communities\HCS Denominator';
 
-libname prod 'C:\Users\panyue\Box\1 Healing Communities\DATA_NYS\Christmas Eve\Ongoing Production';
+libname prod 'C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\Christmas Eve\Ongoing Production';
 
-libname dan 'C:\Users\panyue\Box\1 Healing Communities\DATA_NYS\Christmas Eve\Ongoing Production';
+libname dan 'C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\Christmas Eve\Ongoing Production';
 
 /*libname layla 'C:\Users\panyue\Box\Yue Pan from old laptop 2015\DR FEASTER\Healing Communities\HCS Denominator\Layla';*/
-libname partial "C:\Users\panyue\Box\1 Healing Communities\DATA_NYS\PAN\Denominators\Layla";
-libname wonder "C:\Users\panyue\Box\1 Healing Communities\DATA_NYS\PAN\Denominators\CDC\Output Data";
+libname partial "C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\PAN\Denominators\Layla";
+libname wonder "C:\Users\axc2019\Box\1 Healing Communities\DATA_NYS\PAN\Denominators\CDC\Output Data";
 
-
+PROC COPY IN=TMP1 OUT=MAP;
 
 PROC FREQ DATA=redivis_export;
 TABLES COUNTY_TERRITORY;
